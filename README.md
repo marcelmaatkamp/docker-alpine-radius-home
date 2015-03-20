@@ -1,8 +1,8 @@
 # Freeradius Docker example image
 
-Lightweigth and fast starting Freeradius3 (3.0.6-r1) Docker image. This image size is 12.28 MB, starts blazingly fast and is based on Alpine Linux.  To use this image, clone this repo and make your own modifications.
+Lightweigth and fast starting Freeradius3 (3.0.6-r1) Docker image. This image size is 12.28 MB, starts blazingly fast and is based on Alpine Linux.  
 
-The Dockerfile https://github.com/marcelmaatkamp/docker-alpine-radius-home/blob/master/Dockerfile contains these values for you to modify:
+To use this image, clone this repo and make your own modifications. The Dockerfile https://github.com/marcelmaatkamp/docker-alpine-radius-home/blob/master/Dockerfile contains these values for you to modify:
 ```
 # device
 ENV DEVICE_NAME=router_wireless
