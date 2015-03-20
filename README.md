@@ -29,10 +29,9 @@ To start:
    marcelmaatkamp/freeradius-home
 ```
 
-To just test with the default username 'testing' and password 'passeord' on device '192.168.1.18' and secret 'SECRET':
+To  test with username 'testing' and password 'password' on device '192.168.1.18' and secret 'SECRET':
 ```
- $ docker exec -ti freeradius-home bash
- # radtest testing password 192.168.1.18 0 SECRET
+ $ radtest testing password 192.168.1.18 0 SECRET
 ```
 
 To debug:
