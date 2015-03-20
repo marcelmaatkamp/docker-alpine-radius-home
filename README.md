@@ -4,11 +4,16 @@ Lightweigth and fast starting Freeradius3 (3.0.6-r1) Docker image. This image si
 
 Dockerfile:
 ```
-$ cat Dockerfile
-FROM marcelmaatkamp/freeradius
+...
+# device
+ENV DEVICE_NAME=router_wireless
+ENV DEVICE_HOSTNAME=192.168.1.18
+ENV DEVICE_SECRET=SECRET
 
-RUN echo "<<USERNAME>> Cleartext-Password := \"<<PASSWORD>>\"" >> /etc/raddb/users
-RUN echo -e "client router_wireless {\n ipaddr = <<HOST_IP_ADDRESS>>\n secret = <<SECRET>>\n}" >> /etc/raddb/clients.conf
+# user
+ENV USERNAME=testing
+ENV PASSWORD=password
+...
 ```
 
 Build this image:
