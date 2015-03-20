@@ -2,7 +2,7 @@
 
 Lightweigth and fast starting Freeradius3 (3.0.6-r1) Docker image. This image size is 12.28 MB, starts blazingly fast and is based on Alpine Linux.  To use this image, clone this repo and make your own modifications.
 
-Dockerfile:
+The Dockerfile contains these values for you to modify:
 ```
 # device
 ENV DEVICE_NAME=router_wireless
@@ -14,7 +14,7 @@ ENV USERNAME=testing
 ENV PASSWORD=password
 ```
 
-Build this image:
+After modification build this image:
 ```
  $ docker build -t marcelmaatkamp/freeradius-home .
 ```
@@ -29,7 +29,7 @@ To start:
    marcelmaatkamp/freeradius-home
 ```
 
-To just test user and password:
+To just test with the default username 'testing' and password 'passeord' on device '192.168.1.18' and secret 'SECRET':
 ```
  $ docker exec -ti freeradius-home bash
  # radtest testing password 192.168.1.18 0 SECRET
