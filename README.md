@@ -34,7 +34,7 @@ To start:
 To just test user and password:
 ```
  $ docker exec -ti freeradius-home bash
- # radtest testing password localhost 0 SECRET
+ # radtest testing password 192.168.1.18 0 SECRET
 ```
 
 To debug:
