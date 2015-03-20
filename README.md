@@ -4,7 +4,6 @@ Lightweigth and fast starting Freeradius3 (3.0.6-r1) Docker image. This image si
 
 Dockerfile:
 ```
-...
 # device
 ENV DEVICE_NAME=router_wireless
 ENV DEVICE_HOSTNAME=192.168.1.18
@@ -13,7 +12,6 @@ ENV DEVICE_SECRET=SECRET
 # user
 ENV USERNAME=testing
 ENV PASSWORD=password
-...
 ```
 
 Build this image:
